@@ -1,0 +1,74 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #555;
+  outline: none;
+}
+
+input[type=text]:focus {
+  background-color: lightblue;
+}
+
+body {
+	background-image:url("https://www.caribbeannewsdigital.com/sites/default/files/2020-05/autos.jpg");
+}
+	
+div {
+  background-color: lightgrey;
+  width: 300px;
+  border: 10px solid blue;
+  padding: 50px;
+  margin: 20px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+</style>
+</head>
+<body>
+
+<div>
+
+<form action="cgi-bin/form.py">
+
+<h1> Ingreso de empleados </h1>
+  <label for="fname">Nombres</label>
+  <input type="text" id="fname" name="fname" >
+  <label for="lname">Apellidos</label>
+  <input type="text" id="lname" name="lname" >
+  <label for="idempl">Numero de identificacion de empleado</label>
+  <input type="text" id="idempl" name="idempl">
+  <label for="city">Ciudad</label>
+  <select id="city" name="city">
+      <option value="bogota">Bogota</option>
+      <option value="medellin">Medellin</option>
+      <option value="cali">Cali</option>
+      <option value="barranquilla">Barranquilla</option>
+      <option value="cucuta">Cucuta</option>
+      <option value="bucaramanga">Bucaramanga</option>	
+  </select><br>
+  <input id="boton" type="submit" value="Ingresar"> 
+</form>
+</div>
+
+</body>
+</html>
